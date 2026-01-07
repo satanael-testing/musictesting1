@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar-background {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-main, .right-main {
+    width: 20%;
+    background-color: #f4f4f4;
+    height: 100%;
+    margin: 10px;
+}
+
+.centre-main {
+    width: 55%;
+}
+
+.big-card {
+    background: #1c1c1c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.small-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.small-card {
+    background: #2b2b2b;
+    color: white;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song {
+    background: #3e3e3e;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
